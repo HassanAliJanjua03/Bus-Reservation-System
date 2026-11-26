@@ -14,11 +14,20 @@ A menu-driven academic C++ application modeling bus registration and seat reserv
 
 | File | Purpose |
 | --- | --- |
-| [Bus Reservation System.cpp](Bus%20Reservation%20System.cpp) | Original source or design file |
+| [Bus Reservation System.cpp](Bus%20Reservation%20System.cpp) | Original C++ source |
 
 ## How to explore or reproduce
 
 Use a Windows-compatible C++ compiler or IDE supporting `conio.h`. With MinGW, an example build command is `g++ "Bus Reservation System.cpp" -o bus_reservation.exe`. Run the resulting executable with synthetic passenger information only.
+
+## Suggested test cases
+
+- Register a bus and verify its route and departure information.
+- Check first, last and every fourth seat boundary, plus invalid seat numbers.
+- Attempt a duplicate reservation and verify the displayed availability.
+- Register more than the supported capacity and check bounds handling.
+
+These are proposed tests, not passing test results.
 
 ## Scope and limitations
 
